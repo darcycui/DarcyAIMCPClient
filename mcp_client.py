@@ -4,9 +4,9 @@ from typing import Optional, Any
 from mcp import ClientSession, StdioServerParameters, stdio_client
 import subprocess
 
+MCP_SERVER_FOLDER = r"D:\Projectss\AI\DarcyMCP\DarcyMCPServer"
+MCP_SERVER_FILE = r"weather.py"
 
-server_folder = r"D:\Projectss\AI\DarcyMCP\DarcyMCPServer"
-server_file = r"weather.py"
 
 class MCPClient:
     def __init__(self):
@@ -16,9 +16,9 @@ class MCPClient:
         self.server_command = "uv"
         self.server_args = [
             "--directory",
-            server_folder,
+            MCP_SERVER_FOLDER,
             "run",
-            server_file
+            MCP_SERVER_FILE
         ]
         self.session: Optional[ClientSession] = None
         self.stdio_context = None
