@@ -1,8 +1,7 @@
-import asyncio
 import traceback
-from typing import Optional, Any
+from typing import Optional
+
 from mcp import ClientSession, StdioServerParameters, stdio_client
-import subprocess
 
 MCP_SERVER_FOLDER = r"D:\Projectss\AI\DarcyMCP\DarcyMCPServer"
 MCP_SERVER_FILE = r"weather.py"
